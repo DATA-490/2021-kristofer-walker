@@ -1,5 +1,5 @@
 # <Project Title>
-* **Author**: <Name>, github: [<username>](<url link to github profile>)
+* **Author**: <Kris Walker>, github: [<username>](<url link to github profile>)
 * **Major**: <Major>
 * **Year**: <Year>
 
