@@ -436,19 +436,26 @@ summary {
 <ul>
 <li>Variables: &lt;If data, explain key variables here&gt;</li>
 </ul></li>
-<li><code>cloud_resources</code>
+<li><code>BlankSurveys</code> This folder contains blank copies of each survey type (ASCI, pre-class survey, post-class survey) along with a new survey template.</li>
+<li><code>CloudResources</code> Some instructions on how to access GPU power (we mostly used AWS, so those instructions have more detail and explanation).
 <ul>
 <li>amazon.md</li>
 <li>google.md</li>
 <li>sony.md</li>
 </ul></li>
-<li><code>ProductionCode</code>
+<li><code>JMM</code> Contains graphics along with screenshots of model results and TFRuns output that were used for the 2020 Joint Mathematics Meeting.</li>
+<li><code>ProductionCode</code> Contains the preprocessing code along with two .Rdata objects.
 <ul>
-<li>Models</li>
+<li>Models: Three models that were used producing the most accurate results. There may be better ones yet to create…</li>
+<li>ProcessingScripts: The most important scripts such as <code>preprocess.R</code> and <code>strip_functions.R</code> are here. Comments are as detailed as I could make them.</li>
+<li><code>asci_train_data_080519.Rdata</code>: Prepped ASCI training and validation data and labels ready for a model.</li>
+<li><code>train_and_validation_data.Rdata</code>: Prepped training and validation data and labels. (Don’t quite remember making this…)</li>
 </ul></li>
-<li><code>Training</code></li>
-<li><code>Validation</code></li>
+<li><code>References</code> Here’s where you’ll find a little literature review, and some great deep learning books. I recommend the Chollet book.</li>
+<li><code>Training</code> Training data (pdfs) and labels (csv) are located within this folder.</li>
+<li><code>Validation</code> Validation data (pdfs) and labels (csv) are located here.</li>
 </ul>
+<p>MyResearchDirectory.Rproj:</p>
 </div>
 <div id="completion-status" class="section level1">
 <h1>Completion status</h1>

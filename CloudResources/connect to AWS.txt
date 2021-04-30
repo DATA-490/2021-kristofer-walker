@@ -16,7 +16,8 @@ password; instance ID
 Then change password
 
 
-
+****Super helpful*****
+https://www.louisaslett.com/RStudio_AMI/
 
 
 
