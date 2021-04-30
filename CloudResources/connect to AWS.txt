@@ -1,0 +1,22 @@
+1. go to https://aws.amazon.com/
+2. sign in with my account - management console
+3. EC2
+
+Go to R studio AMI : https://aws.amazon.com/marketplace/pp/B0785SXYB2
+
+* subscribe
+* configuration
+* choose region - Oregon
+* launch
+
+
+First launch: username Rstudio-user
+password; instance ID
+
+Then change password
+
+
+
+
+
+

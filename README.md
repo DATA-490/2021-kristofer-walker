@@ -13,6 +13,15 @@ Due to both the pandemic and the Science building move, this research was delaye
 
 * `<file>` - <In words, what does it do>
     - Variables: <If data, explain key variables here>
+* `cloud_resources`
+    - amazon.md
+    - google.md
+    - sony.md
+* `ProductionCode`
+    - Models
+    - ProcessingScripts 
+* `Training`
+* `Validation`  
 
 # Completion status 
 
