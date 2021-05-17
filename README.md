@@ -44,7 +44,7 @@ MyResearchDirectory.Rproj:
 - [ ] Maybe these PDF processing functions can be turned into an R package!
 
 # Can someone else work on this project? 
-Yes
+Yes a step-by-step guide can be found [here](./References/instructions.Rmd)
 
 # Public Display/dissemination
 Poster presentation at the 2020 Joint Mathematics Meeting [here](./JMM/JMM 2020 Deep Learning poster.pdf)
