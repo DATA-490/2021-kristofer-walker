@@ -11,8 +11,6 @@ Due to both the pandemic and the Science building move, this research was delaye
 
 # Explanation of files
 
-* `<file>` - <In words, what does it do>
-    - Variables: <If data, explain key variables here>
 * `BlankSurveys` This folder contains blank copies of each survey type (ASCI, pre-class survey, post-class survey) along with a new survey template.
 * `CloudResources` Some instructions on how to access GPU power (we mostly used AWS, so those instructions have more detail and explanation).
     - amazon.md
@@ -34,19 +32,21 @@ MyResearchDirectory.Rproj:
 
 <as applicable> Pending steps include: 
 
-- [ ] <thing 1>
-- [ ] <thing 2>
+- [ ] Prediction data needs to be repackaged into a dataframe that's ready for analysis.
+- [ ] Code needs to be added into the preprocessing stage that makes it possible to read survey ID's.
+- [ ] The PDF scanning process needs adjustment.
+- [ ] The strip processing needs read area generalization.
 
 ## Enhancements: 
-<List at least 2>
 
-- [ ] <thing 1>
-- [ ] <thing 2>
+- [ ] It would be powerful to generalize this for different paper surveys involving Likert scale responses.
+- [ ] We should try other optical character recognition software, where a user may highlight readable areas that can be translated to x-y-coordinates.
+- [ ] Maybe these PDF processing functions can be turned into an R package!
 
 # Can someone else work on this project? 
-<Yes/No>
+Yes
 
 # Public Display/dissemination
-<List any existing public facing pages here>
+Poster presentation at the 2020 Joint Mathematics Meeting [here](./JMM/JMM 2020 Deep Learning poster.pdf)
 
 # License

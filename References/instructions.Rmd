@@ -1,0 +1,30 @@
+---
+title: "Step-by-Step Instructions"
+author: "Kris Walker"
+date: "5/17/2021"
+output: html_document
+---
+
+# Step-by-Step Instructions
+
+These surveys will come in two different types: What we call ASCI and pre/post. The ASCI surveys are the ones that have little divisions (lines) between possible responses. The prepost surveys are the ones given at the beginning and end of the semester (thus, PRE-class and POST-class).  
+
+What follows are some step-by-step instructions in order to facilitate the understanding of the process we used to prepare our data and run the model.
+
+## Step One
+
+The two types of surveys (ASCI, pre/post) will generally come to you in three ways: the "stand-alone ASCI", the "four-paged combined", and the "prepost". The four page combined surveys are basically just the ASCI and pre/post surveys stapled together including a blank last page. We used office printers to scan large batches of these surveys and downloaded them. During the scanning process, be sure to pay attention to character point size as these may vary from printer to printer, and may also vary from what we've computed in the code. Labels were created with a .csv file and by looking at what we've done before, you'll see the format we followed.
+
+## Step Two
+
+The R script `preprocess.R` is your entry point in the process and that script sources `strip_functions.R` which handles the processing of both survey types, including label preparation. You'll also notice in `preprocess.R` that for the four-paged combined surveys, the surveys are first separated here before being prepocessed by their respective function call. This script will eventually output training and validation data.
+
+## Step Three
+
+Now that you have your training and validation data, you'll need to run your model. We used Amazon Web Services EC2 instances to do this. In the CloudResources directory [here](./CloudResources), you'll find instructions on how to set up an account if you don't already have one. Within that directory, in connect to AWS.txt [here](./CloudResources/connect to AWS.txt), I've included a link to Louis Aslett's instances that I found useful because he provides images with everything you already need to run these models in R along with useful instructions on how to access your instance.  
+Once you get that all going, just simply copy and paste a model found in the ProductionCode Directory under Models, making sure you have the project loaded into the online server. Or you could just build your own, but keep in mind, your being charged by the hour (.99 cents as of this writing). You may run into problems with packages, Python issues, CUDA, etc, so you may have to do a bit of troubleshooting. Things get updated or deprecated and so forth. 
+
+## Extra Stuff
+
+I've tried to make the code as clear as possible with heavy commenting. If you are having any difficulty following, I would suggest just opening another file and copying the code and seeing what it's actually doing to what. By following the comments, it should be pretty clear how the process works. There would be gaps in time when I couldn't work on this and I had completely forgotton what I had done and why! Spending some time going through it step-by-step and checking out what happens along the way was extremely helpful for me to get reacquainted with what exactly was going on. Who knows, maybe you'll find a way to improve things! Another Note: the image cropping that happens within the `strip_functions.R` script is super important, so make sure that these dimensions work for you as the dimensions coded there worked for how the images were originally scanned in (via department printers or chc printers).
+
